@@ -24,4 +24,6 @@ They may employ techniques such as caching, load balancing, and connection pooli
 In conclusion, a web server is a computer system that hosts websites, and runs web server software such as Apache HTTP, IIS for windows. The hosts can be shared or dedicated.
 
 ** Shared Hosting: In shared hosting, multiple websites are hosted on the same server, and resources (such as CPU, memory, and storage) are shared among all the hosted websites. This means that resources are limited and may be affected by the activities of other websites on the same server.
+
+
 ** Dedicated Hosting: With dedicated hosting, a single server is exclusively allocated to a single client or website. All the server's resources are dedicated to that client, providing higher performance and more control over resource allocation.
