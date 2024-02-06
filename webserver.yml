@@ -36,6 +36,11 @@
       state: present
      register: Webserver setup running
 
+   - name: Display the content
+     copy:
+      content: "Hello World from Ansibull. \n"
+      dest: /var/www/html/index.html
+     
    - name: The print output
      debug: 
       var: Webserver setup running
