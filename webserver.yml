@@ -12,29 +12,21 @@
      when: ansible_distribution == 'RedHat'
 
    - name: Enable the http service is running 
-     asible.builtin.service: 
+     service: 
       name: httpd
       enabled: true
       state: started
 
    - name: Enable firewall service and start
-     ansible.builtin.service:
+     service:
       service: firewalld
       state: started
       enabled: true
 
-   - name: Enable the firewalld service port
-     ansible.posix.firewalld:
-      service: https
-      state: enabled
-      immediate: true
-      permanent: true
-
    - name: Print the output
-     stat: 
-      path: /
-      state: present
-     register: Webserver setup running
+     stat:    
+      path: /home
+     register: Webserver
 
    - name: Display the content
      copy:
@@ -43,6 +35,6 @@
      
    - name: The print output
      debug: 
-      var: Webserver setup running
+      var: Webserver
 
 #the /etc/hosts is used to input the hostname and the ip address of the managed hosts on which the webserver is to be configured. Here we used the RedHat OS yum module. 
