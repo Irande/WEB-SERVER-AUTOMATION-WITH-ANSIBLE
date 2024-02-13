@@ -4,7 +4,7 @@
   become: false
   tasks: 
    - name: Install the http package.
-     ansible.builtin.package:
+     yum:
       name:
        - httpd
        - firewalld
