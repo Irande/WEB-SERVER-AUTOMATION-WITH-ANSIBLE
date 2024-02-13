@@ -8,6 +8,7 @@
       name:
        - httpd
        - firewalld
+       - mariadb-server
       state: latest
      when: ansible_distribution == 'RedHat'
 
