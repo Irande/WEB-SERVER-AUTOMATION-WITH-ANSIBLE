@@ -4,7 +4,14 @@
   tasks: 
    - name: Add users
      user: 
-      name: Fredrick
+      name: Fred
       uid: 1020
       state: present
+
+   - name: Make a directory
+     file: 
+      path: /home/dir.txt
+      state: directory
+
+
 
