@@ -1,5 +1,8 @@
 [localhost]
 127.0.0.1
 
+[aix]
+192.168.0.20
+
 #for this we will be using the localhost of the machine. Note: You can input your ip address for the managed hosts you intend to add to the inventory.
 #Also edit the /etc/hosts to input the hostname and ip address. 
